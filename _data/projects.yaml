@@ -8,7 +8,7 @@
 
     - name: GitConsensus
       description: GitConsensus makes it possible to automate project governance on GitHub by using “reactions” as a voting mechanism to automatically merge (or close) pull requests.
-      github: gitconsensus
+      github: gitconsensus/GitConsensusService
       image: gitconsensus.png
       homepage: https://www.gitconsensus.com/
 
