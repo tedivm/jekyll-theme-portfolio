@@ -88,28 +88,10 @@
 
 - name: Puppet
   projects:
-    - name: hieratic
-      description: This module makes all of the native datatypes present in Puppet accessible directly using Hiera in order to make testing and prototyping faster.
-      puppet_forge: tedivm/hieratic
-      github: tedivm/puppet-hieratic
-      image: puppet.png
-
     - name: psad
       description: This module controls the Port Scan Active Defense program, providing active response to block port scans.
       puppet_forge: tedivm/psad
       github: tedivm/puppet-psad
-      image: puppet.png
-
-    - name: ghebackups
-      description: This module turns a server into a Github Enterprise backup server. It creates the relevant accounts, adds cronjobs, and manages ssh options to ensure that backups occur.
-      puppet_forge: tedivm/ghebackups
-      github: tedivm/puppet-ghebackups
-      image: puppet.png
-
-    - name: iscsi
-      description: This module makes it possible to define iscsi connections in Puppet. This makes it easier to work with AWS Storage Gateways and other iscsi devices.
-      puppet_forge: tedivm/iscsi
-      github: tedivm/puppet-iscsi
       image: puppet.png
 
     - name: rsnapshot
@@ -118,10 +100,28 @@
       github: tedivm/puppet-rsnapshot
       image: puppet.png
 
+    - name: ghebackups
+      description: This module turns a server into a Github Enterprise backup server. It creates the relevant accounts, adds cronjobs, and manages ssh options to ensure that backups occur.
+      puppet_forge: tedivm/ghebackups
+      github: tedivm/puppet-ghebackups
+      image: puppet.png
+
+    - name: hieratic
+      description: This module makes all of the native datatypes present in Puppet accessible directly using Hiera in order to make testing and prototyping faster.
+      puppet_forge: tedivm/hieratic
+      github: tedivm/puppet-hieratic
+      image: puppet.png
+
     - name: inspiricd
       description: This module allows IRC networks and servers to be defined using inspircd.
       puppet_forge: tedivm/inspircd
       github: tedivm/puppet-inspircd
+      image: puppet.png
+
+    - name: iscsi
+      description: This module makes it possible to define iscsi connections in Puppet. This makes it easier to work with AWS Storage Gateways and other iscsi devices.
+      puppet_forge: tedivm/iscsi
+      github: tedivm/puppet-iscsi
       image: puppet.png
 
 
@@ -163,12 +163,6 @@
       github: tedivm/ScreepsDashboard
       image: quorum.png
 
-    - name: screepsmod-konami
-      description: Konami is a Screeps Server mod that changes the world settings to allow AI to grow significantly faster. This makes development easier as longer term issues will show up in smaller amounts of time.
-      github: screepsmods/screepsmod-konami
-      npm: screepsmod-konami
-      image: screepsmods.png
-
     - name: python-screeps
       description: This library was the first third party library for the Screeps API and has been responsible for spawning a large third party ecosystem.
       github: screepers/python-screeps
@@ -194,6 +188,12 @@
       description: This is a mobile client for the Screeps game built using NativeScript. It has a built in messenger, profiles of different alliances, a websocket based console for interacting with the system, and other informational pages such as the wallet and market order pages.
       github: tedivm/Spawn1
       image: nativescript.png
+
+    - name: screepsmod-konami
+      description: Konami is a Screeps Server mod that changes the world settings to allow AI to grow significantly faster. This makes development easier as longer term issues will show up in smaller amounts of time.
+      github: screepsmods/screepsmod-konami
+      npm: screepsmod-konami
+      image: screepsmods.png
 
     - name: screeps-backup
       description: This tool takes a backup of an existing account's memory and segments and provides the ability to restore from those backups.
