@@ -37,6 +37,7 @@
     - name: Stash
       description: This caching library supports multiple backends with a consistent frontend. It supports hierarchical keys, stampede and dogpile protection, automatic miss distribution, and more.
       github: tedious/Stash
+      documentation: https://www.stashphp.com/
       packagist: tedivm/stash
       icon: fab fa-php
 
