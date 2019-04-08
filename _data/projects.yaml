@@ -35,25 +35,25 @@
 - name: Libraries
   projects:
     - name: Stash
-      description: A PHP Caching Library with over one million downloads.
+      description: This caching library supports multiple backends with a consistent frontend. It supports hierarchical keys, stampede and dogpile protection, automatic miss distribution, and more.
       github: tedious/Stash
       packagist: tedivm/stash
       icon: fab fa-php
 
     - name: JShrink
-      description: A javascript minification library with over three million downloads.
+      description: This library minifies javascript using 100% pure PHP, allowing it to be integrated into applications with minimal work and maximum compatibility.
       github: tedious/JShrink
       packagist: tedivm/jshrink
       icon: fab fa-php
 
     - name: github3apps.py
-      description: A python library for building GitHub Applications.
+      description: This library is a wrapper around the <a href="https://github.com/sigmavirus24/github3.py">github3.py</a> library, giving it the ability to build GitHub Applications.
       github: tedivm/github3apps.py
       pypi: github3apps.py
       icon: fab fa-github
 
     - name: Fetch
-      description: A PHP Library for IMAP and POP email access.
+      description: This library wraps the native PHP IMAP libraries around a modern object orientated interface.
       github: tedious/Fetch
       packagist: tedivm/fetch
       icon: fab fa-php
