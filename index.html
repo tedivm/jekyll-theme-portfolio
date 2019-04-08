@@ -6,6 +6,9 @@ layout: page
 <div class='row'>
   <div class='col-12 my-3'>
     <h3>{{ category.name }}</h3>
+    {% if category.description %}
+    <div class="alert alert-light">{{ category.description | safe | newline_to_br }}</div>
+    {% endif %}
     {%- assign columns = 3 -%}
     {% for project in category.projects %}
       {% assign loop = forloop.index | minus: 1 | modulo: columns %}

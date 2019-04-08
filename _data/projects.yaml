@@ -136,6 +136,7 @@
 
 
 - name: Screeps
+  description: <a href="https://screeps.com/" class="alert-link">Screeps</a> is an an open-source sandbox MMO RTS game for programmers, wherein the core mechanic is programming your units' AI.
   projects:
     - name: Quorum
       description: The Quorum project is an experiment that uses Screeps, GitConsensus, and the ScreepsAutoSpawner to see what happens when the community has to vote to accept new pull requests- and any vote that passes gets pulled. It initially started as being written primarily by me and overtime has gotten more community involvement.
