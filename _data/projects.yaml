@@ -37,11 +37,13 @@
     - name: Stash
       description: A PHP Caching Library with over one million downloads.
       github: tedious/Stash
+      packagist: tedivm/stash
       icon: fab fa-php
 
     - name: JShrink
       description: A javascript minification library with over three million downloads.
       github: tedious/JShrink
+      packagist: tedivm/jshrink
       icon: fab fa-php
 
     - name: github3apps.py
@@ -53,6 +55,7 @@
     - name: Fetch
       description: A PHP Library for IMAP and POP email access.
       github: tedious/Fetch
+      packagist: tedivm/fetch
       icon: fab fa-php
 
 
