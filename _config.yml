@@ -16,12 +16,12 @@
 title: Robert Hafner's Open Source Projects
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  A Bootstrap 4 start up project for Jekyll and Github Pages
+  Open Source Projects by Robert Hafner (tedivm)
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tedivm
 github_username:  tedivm
-
+email: tedivm@tedivm.com
 
 # Build settings
 plugins:
