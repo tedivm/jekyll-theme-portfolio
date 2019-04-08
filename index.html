@@ -26,7 +26,7 @@ layout: page
             <div class="card-body">
               <h5 class="card-title">{{ project.name }}
               {% if project.github %}
-              <div class="float-right"><a class="github-button" href="{{ project.github }}" data-show-count="true" aria-label="Star {{ project.name }} on GitHub">Star</a><div>
+              <div class="float-right"><a class="github-button" href="https://github.com/{{ project.github }}" data-show-count="true" aria-label="Star {{ project.name }} on GitHub">Star</a><div>
               {% endif %}
               </h5>
               {% if project.description %}
