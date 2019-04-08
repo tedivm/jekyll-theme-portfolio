@@ -63,7 +63,7 @@
 
     - name: JSONSmash
       description: A node cli shell that lets users browse large json objects like they would a filesystem.
-      github: tedivm/jsonmash
+      github: tedivm/jsonsmash
       icon: fas fa-terminal
 
     - name: SecretCLI
@@ -111,8 +111,8 @@
 
     - name: inspiricd
       description: This module allows IRC networks and servers to be defined using inspircd.
-      puppet_forge: tedivm/inspiricd
-      github: tedivm/puppet-inspiricd
+      puppet_forge: tedivm/inspircd
+      github: tedivm/puppet-inspircd
       image: puppet.png
 
 
@@ -132,6 +132,7 @@
       description: This Wordpress Plugin adds YAML Syntax Highlighting.
       platform: Wordpress
       github: tedivm/syntaxhighlighter_yaml
+      wordpress: syntaxhighlighter-evolved-yaml-brush
 
 
 - name: Screeps
