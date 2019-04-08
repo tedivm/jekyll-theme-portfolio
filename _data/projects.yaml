@@ -3,6 +3,7 @@
   projects:
     - name: Nebula
       description: "Nebula provides a simplified dashboard that allows researchers to launch and manage their own servers on AWS.\nIt also provides SSH Key management, scheduled shutdowns, group controls, and a variety of other features."
+      documentation: https://github.com/tedivm/nebula/wiki
       github: tedivm/nebula
       image: nebula.png
 
@@ -46,6 +47,7 @@
     - name: github3apps.py
       description: A python library for building GitHub Applications.
       github: tedivm/github3apps.py
+      pypi: github3apps.py
       icon: fab fa-github
 
     - name: Fetch
@@ -59,21 +61,25 @@
     - name: GitConsensus CLI
       description: A standalone python application and library for managing Github PRs using Reactions as a voting mechanism.
       github: gitconsensus/GitConsensusCLI
+      pypi: gitconsensus
       image: gitconsensus.png
 
     - name: JSONSmash
       description: A node cli shell that lets users browse large json objects like they would a filesystem.
       github: tedivm/jsonsmash
+      npm: jsonsmash
       icon: fas fa-terminal
 
     - name: SecretCLI
       description: A simple CLI tool that makes reading and writing to the <a href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a> super easy.
       github: tedivm/secretcli
+      pypi: secretcli
       icon: fas fa-terminal
 
     - name: URLParser
       description: Another really simple tool, the URLParser takes in various URIs and returns back the piece you're looking for; such as the scheme, domain, or port.
       github: tedivm/URLParser
+      pypi: urlparser
       icon: fas fa-terminal
 
 
@@ -141,6 +147,7 @@
     - name: Quorum
       description: The Quorum project is an experiment that uses Screeps, GitConsensus, and the ScreepsAutoSpawner to see what happens when the community has to vote to accept new pull requests- and any vote that passes gets pulled. It initially started as being written primarily by me and overtime has gotten more community involvement.
       github: ScreepsQuorum/screeps-quorum
+      npm: screepsbot-quorum
       image: quorum.png
 
     - name: ScreepsAutoSpawner
@@ -156,11 +163,13 @@
     - name: screepsmod-konami
       description: Konami is a Screeps Server mod that changes the world settings to allow AI to grow significantly faster. This makes development easier as longer term issues will show up in smaller amounts of time.
       github: screepsmods/screepsmod-konami
+      npm: screepsmod-konami
       image: screepsmods.png
 
     - name: python-screeps
       description: This library was the first third party library for the Screeps API and has been responsible for spawning a large third party ecosystem.
       github: screepers/python-screeps
+      pypi: screepsapi
       icon: fab fa-python
 
     - name: screeps_console
