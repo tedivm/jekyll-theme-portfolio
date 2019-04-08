@@ -18,7 +18,8 @@
           {%- endif -%}
         {% endfor -%}
         <li class="nav-item">
-          <a class="nav-link" href="{{ site.github.repository_url }}">Fork me on Github</a>
+          <!-- Place this tag where you want the button to render. -->
+          {% if site.github_username %}<a class="github-button nav-link" href="https://github.com/{{ site.github_username }}" data-show-count="true" aria-label="Follow @{{ site.github_username }} on GitHub">Follow @tedivm</a>{% endif %}
         </li>
       </ul>
     </div>

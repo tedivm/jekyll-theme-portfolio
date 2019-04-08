@@ -1,0 +1,52 @@
+---
+layout: page
+---
+
+{% for category in site.data.projects %}
+<div class='row'>
+  <div class='col-12 my-3'>
+    <h3>{{ category.name }}</h3>
+    {%- assign columns = 3 -%}
+    {% for project in category.projects %}
+      {% assign loop = forloop.index | minus: 1 | modulo: columns %}
+      {% if loop == 0 %}
+      <div class="row">
+      {% endif %}
+        <div class="col-12 col-lg-6 col-xl-{{ 12 | divided_by: columns | int }} my-3">
+          <div class="card">
+            <div class="text-center">
+            {% if project.image %}
+              <img src="{{ "/assets/images/projects" | relative_url }}/{{ project.image }}" class="py-1 w-50 card-img-top" alt="{{ project.name }} Project Logo">
+            {% elsif project.icon %}
+              <i class="{{ project.icon}} fa-10x py-2"></i><br><br>
+            {% else %}
+              <i class="fas fa-code-branch fa-10x py-2"></i><br><br>
+            {% endif %}
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ project.name }}
+              {% if project.github %}
+              <div class="float-right"><a class="github-button" href="{{ project.github }}" data-show-count="true" aria-label="Star {{ project.name }} on GitHub">Star</a><div>
+              {% endif %}
+              </h5>
+              {% if project.description %}
+              <p class="card-text">{{ project.description | safe | newline_to_br }}</p>
+              {% endif %}
+            </div>
+            <ul class="list-group list-group-flush">
+              {% if project.homepage %}<li class="list-group-item"><a href="{{ project.homepage }}" class="card-link">Project Home</a></li>{% endif %}
+              {% if project.documentation %}<li class="list-group-item"><a href="{{ project.documentation }}" class="card-link">Documentation</a></li>{% endif %}
+              {% if project.github %}<li class="list-group-item"><a href="https://github.com/{{ project.github }}" class="card-link">Github</a></li> {% endif %}
+              {% if project.puppet_forge %}<li class="list-group-item"><a href="https://forge.puppet.com/{{ project.puppet_forge }}" class="card-link">Puppet Forge</a></li>{% endif %}
+            </ul>
+          </div>
+        </div>
+      {%- assign last_loop = columns | minus: 1 -%}
+      {% if loop == last_loop or forloop.last == true %}
+      </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% endfor %}
