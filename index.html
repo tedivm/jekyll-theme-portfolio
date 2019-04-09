@@ -41,14 +41,16 @@ layout: page
               {% endif %}
             </div>
             <ul class="list-group list-group-flush">
-              {% if project.homepage %}<li class="list-group-item"><a href="{{ project.homepage }}" class="card-link">Project Home</a></li>{% endif %}
-              {% if project.documentation %}<li class="list-group-item"><a href="{{ project.documentation }}" class="card-link">Documentation</a></li>{% endif %}
-              {% if project.github %}<li class="list-group-item"><a href="https://github.com/{{ project.github }}" class="card-link">Github</a></li> {% endif %}
-              {% if project.puppet_forge %}<li class="list-group-item"><a href="https://forge.puppet.com/{{ project.puppet_forge }}" class="card-link">Puppet Forge</a></li>{% endif %}
-              {% if project.npm %}<li class="list-group-item"><a href="https://www.npmjs.com/package/{{ project.npm }}" class="card-link">npm</a></li>{% endif %}
-              {% if project.pypi %}<li class="list-group-item"><a href="https://pypi.org/project/{{ project.pypi }}/" class="card-link">PyPI</a></li>{% endif %}
-              {% if project.packagist %}<li class="list-group-item"><a href="https://packagist.org/packages/{{ project.packagist }}" class="card-link">Packagist</a></li>{% endif %}
-              {% if project.wordpress %}<li class="list-group-item"><a href="https://wordpress.org/plugins/{{ project.wordpress }}/" class="card-link">Wordpress Plugin Directory</a></li>{% endif %}
+              <li class="list-group-item text-center">
+                {% if project.homepage %}<a href="{{ project.homepage }}" class="card-link"><i class="fas fa-home fa-2x" title="{{ project.name }} Homepage"></i></a>{% endif %}
+                {% if project.documentation %}<a href="{{ project.documentation }}" class="card-link"><i class="fas fa-book-open fa-2x" title="{{ project.name }} Documentation"></i></a>{% endif %}
+                {% if project.github %}<a href="https://github.com/{{ project.github }}" class="card-link"><i class="fab fa-github fa-2x" title="{{ project.name }} on Github"></i></a>{% endif %}
+                {% if project.puppet_forge %}<a href="https://forge.puppet.com/{{ project.puppet_forge }}" class="card-link"><i class="fas fa-flask fa-2x" title="{{ project.name }} on Puppet Forge"></i></a>{% endif %}
+                {% if project.npm %}<a href="https://www.npmjs.com/package/{{ project.npm }}" class="card-link"><i class="fab fa-npm fa-2x" title="{{ project.name }} on the NPM Registry"></i></a>{% endif %}
+                {% if project.pypi %}<a href="https://pypi.org/project/{{ project.pypi }}/" class="card-link"><i class="fab fa-python fa-2x" title="{{ project.name }} on PyPI"></i></a>{% endif %}
+                {% if project.packagist %}<a href="https://packagist.org/packages/{{ project.packagist }}" class="card-link"><i class="fab fa-php fa-2x" title="{{ project.name }} on Packagist"></i></a>{% endif %}
+                {% if project.wordpress %}<a href="https://wordpress.org/plugins/{{ project.wordpress }}/" class="card-link"><i class="fab fa-wordpress fa-2x" title="{{ project.name }} on the Wordpress Plugin Directory"></i></a>{% endif %}
+              </li>
             </ul>
           </div>
         </div>
