@@ -22,6 +22,10 @@ layout: page
               <img src="{{ "/assets/images/projects" | relative_url }}/{{ project.image }}" class="py-1 w-50 card-img-top" alt="{{ project.name }} Project Logo">
             {% elsif project.icon %}
               <i class="{{ project.icon}} fa-10x py-2 logo-icon"></i><br><br>
+            {% elsif category.image %}
+              <img src="{{ "/assets/images/projects" | relative_url }}/{{ category.image }}" class="py-1 w-50 card-img-top" alt="{{ project.name }} Project Logo">
+            {% elsif category.icon %}
+              <i class="{{ category.icon}} fa-10x py-2 logo-icon"></i><br><br>
             {% else %}
               <i class="fas fa-code-branch fa-10x py-2 logo-icon"></i><br><br>
             {% endif %}

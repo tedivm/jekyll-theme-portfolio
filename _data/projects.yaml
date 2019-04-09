@@ -61,6 +61,7 @@
 
 
 - name: CLIs
+  icon: fas fa-terminal
   projects:
     - name: GitConsensus CLI
       description: A standalone python application and library for managing Github PRs using Reactions as a voting mechanism.
@@ -72,58 +73,50 @@
       description: A node cli shell that lets users browse large json objects like they would a filesystem.
       github: tedivm/jsonsmash
       npm: jsonsmash
-      icon: fas fa-terminal
 
     - name: SecretCLI
       description: A simple CLI tool that makes reading and writing to the <a href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a> super easy.
       github: tedivm/secretcli
       pypi: secretcli
-      icon: fas fa-terminal
 
     - name: URLParser
       description: Another really simple tool, the URLParser takes in various URIs and returns back the piece you're looking for; such as the scheme, domain, or port.
       github: tedivm/URLParser
       pypi: urlparser
-      icon: fas fa-terminal
 
 
 - name: Puppet
+  image: puppet.png
   projects:
     - name: psad
       description: This module controls the Port Scan Active Defense program, providing active response to block port scans.
       puppet_forge: tedivm/psad
       github: tedivm/puppet-psad
-      image: puppet.png
 
     - name: rsnapshot
       description: This advanced rsnapshot module makes backing up servers trivial. SSH keys and accounts are created, as are wrapper scripts around sudo to prevent opening the root account to ssh.
       puppet_forge: tedivm/rsnapshot
       github: tedivm/puppet-rsnapshot
-      image: puppet.png
 
     - name: ghebackups
       description: This module turns a server into a Github Enterprise backup server. It creates the relevant accounts, adds cronjobs, and manages ssh options to ensure that backups occur.
       puppet_forge: tedivm/ghebackups
       github: tedivm/puppet-ghebackups
-      image: puppet.png
 
     - name: hieratic
       description: This module makes all of the native datatypes present in Puppet accessible directly using Hiera in order to make testing and prototyping faster.
       puppet_forge: tedivm/hieratic
       github: tedivm/puppet-hieratic
-      image: puppet.png
 
     - name: inspiricd
       description: This module allows IRC networks and servers to be defined using inspircd.
       puppet_forge: tedivm/inspircd
       github: tedivm/puppet-inspircd
-      image: puppet.png
 
     - name: iscsi
       description: This module makes it possible to define iscsi connections in Puppet. This makes it easier to work with AWS Storage Gateways and other iscsi devices.
       puppet_forge: tedivm/iscsi
       github: tedivm/puppet-iscsi
-      image: puppet.png
 
 
 - name: Misc

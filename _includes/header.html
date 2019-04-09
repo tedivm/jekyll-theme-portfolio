@@ -19,7 +19,17 @@
         {% endfor -%}
         {% if site.github_username %}
         <li class="nav-item">
-          <a class="github-button nav-link" href="https://github.com/{{ site.github_username }}" data-show-count="true" data-size="large" aria-label="Follow @{{ site.github_username }} on GitHub">Follow @{{ site.github_username }}</a>
+          <a class="nav-link" href="https://github.com/{{ site.github_username }}" aria-label="Follow @{{ site.github_username }} on Github"><i class="fab fa-github fa-2x"></i></a>
+        </li>
+        {% endif %}
+        {% if site.twitter_username %}
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/{{ site.twitter_username }}" aria-label="Follow @{{ site.twitter_username }} on Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+        </li>
+        {% endif %}
+        {% if site.linkedin_username %}
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" aria-label="Follow @{{ site.linkedin_username }} on LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
         </li>
         {% endif %}
       </ul>
