@@ -124,7 +124,7 @@
     - name: tedivms-flask
       description: This is my default Flask project template. It contains a complete docker environment, user management system, API system, Celery worker and tasks, and other important modules in addition to a Bootstrap based front end.
       github: tedivm/tedivms-flask
-      icon: fab fa-python
+      icon: fas fa-flask
 
     - name: HeadedHome
       description: Using an IOT Button as a trigger, this Lambda function estimates my time of getting home from work based off of current public transit times and sends a text to both myself and my partner with that ETA.
