@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Robert Hafner's Projects
-email: ""
+email: tedivm@tedivm.com
 description: >- # this means to ignore newlines until "baseurl:"
   Open Source Projects by Robert Hafner (tedivm)
 #baseurl: "" # the subpath of your site, e.g. /blog
@@ -22,7 +22,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 twitter_username: tedivm
 github_username:  tedivm
 linkedin_username: roberthafner
-email: tedivm@tedivm.com
+fathom_key: OEFMF
+fathom_domain: fathom.tdvm.net
+
+
 
 # Build settings
 plugins:
