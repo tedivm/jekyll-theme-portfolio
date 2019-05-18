@@ -5,11 +5,13 @@
       description: "Nebula provides a simplified dashboard that allows researchers to launch and manage their own servers on AWS.\nIt also provides SSH Key management, scheduled shutdowns, group controls, and a variety of other features."
       documentation: https://github.com/tedivm/nebula/wiki
       github: tedivm/nebula
+      dockerhub: tedivm
       image: nebula.png
 
     - name: GitConsensus
       description: GitConsensus makes it possible to automate project governance on GitHub by using “reactions” as a voting mechanism to automatically merge (or close) pull requests.
       github: gitconsensus/GitConsensusService
+      dockerhub: tedivm/gitconsensus_service
       image: gitconsensus.png
       homepage: https://www.gitconsensus.com/
 
@@ -121,6 +123,12 @@
 
 - name: Misc
   projects:
+    - name: NLM Scrubber Assist
+      description: The <a href="https://scrubber.nlm.nih.gov/">NLM Scrubber</a> is a package released by the National Library of Medicine to remove PHI from medical documents. This project wraps that in a docker container and provides python and bash libraries.
+      github: radaisystems/nlm-scrubber-docker
+      dockerhub: radaisystems/nlm-scrubber
+      icon: fas fa-file-medical-alt
+
     - name: tedivms-flask
       description: This is my default Flask project template. It contains a complete docker environment, user management system, API system, Celery worker and tasks, and other important modules in addition to a Bootstrap based front end.
       github: tedivm/tedivms-flask
