@@ -19,6 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Open Source Projects by Robert Hafner (tedivm)
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
+homepage: https://blog.tedivm.com
 twitter_username: tedivm
 github_username:  tedivm
 linkedin_username: roberthafner

@@ -17,6 +17,11 @@
           </li>
           {%- endif -%}
         {% endfor -%}
+        {% if site.homepage %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.homepage }}" aria-label="Go to homepage"><i class="fas fa-home fa-2x" title="Go to homepage."></i></a>
+        </li>
+        {% endif %}
         {% if site.github_username %}
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/{{ site.github_username }}" aria-label="Follow @{{ site.github_username }} on Github"><i class="fab fa-github fa-2x" title="Follow @{{ site.github_username }} on Github"></i></a>
