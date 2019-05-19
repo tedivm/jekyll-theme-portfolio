@@ -10,12 +10,12 @@
     - name: Example
       description: This project can be installed from npm.
       github: Example/Example
-      npm: jsonsmash
+      npm: Example
 
     - name: Example
       description: This project can be installed from pypi.
       github: Example/Example
-      pypi: secretcli
+      pypi: Example
 
 
 - name: Misc
