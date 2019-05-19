@@ -50,6 +50,7 @@ layout: page
                 {% if project.npm %}<a href="https://www.npmjs.com/package/{{ project.npm }}" class="card-link"><i class="fab fa-npm fa-2x" title="{{ project.name }} on the NPM Registry"></i></a>{% endif %}
                 {% if project.pypi %}<a href="https://pypi.org/project/{{ project.pypi }}/" class="card-link"><i class="fab fa-python fa-2x" title="{{ project.name }} on PyPI"></i></a>{% endif %}
                 {% if project.packagist %}<a href="https://packagist.org/packages/{{ project.packagist }}" class="card-link"><i class="fab fa-php fa-2x" title="{{ project.name }} on Packagist"></i></a>{% endif %}
+                {% if project.rubygems %}<a href="https://rubygems.org/gems/{{ project.rubygems }}/" class="card-link"><i class="fas fa-gem fa-2x" title="{{ project.name }} on RubyGems"></i></a>{% endif %}
                 {% if project.wordpress %}<a href="https://wordpress.org/plugins/{{ project.wordpress }}/" class="card-link"><i class="fab fa-wordpress fa-2x" title="{{ project.name }} on the Wordpress Plugin Directory"></i></a>{% endif %}
               </li>
             </ul>
