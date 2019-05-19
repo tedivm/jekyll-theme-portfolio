@@ -68,7 +68,7 @@ This tells Jekyll to use the `portfolio` layout for the page, which lets the the
 
 ### Add your Projects
 
-`_data/projects.yaml`
+Project details are stored in `_data/projects.yaml`.
 
 
 ## Defining Projects
@@ -113,6 +113,8 @@ Before diving into all of the options, lets look at an example projects file. Th
       image: puppet.png
 
 ```
+
+For a larger example you can view [tedivm's portfolio data](https://github.com/tedivm/portfolio/blob/master/_data/projects.yaml).
 
 ### Project Fields
 
