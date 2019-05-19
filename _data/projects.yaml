@@ -1,204 +1,34 @@
-
-- name: Applications
-  projects:
-    - name: Nebula
-      description: "Nebula provides a simplified dashboard that allows researchers to launch and manage their own servers on AWS.\nIt also provides SSH Key management, scheduled shutdowns, group controls, and a variety of other features."
-      documentation: https://github.com/tedivm/nebula/wiki
-      github: tedivm/nebula
-      dockerhub: tedivm
-      image: nebula.png
-
-    - name: GitConsensus
-      description: GitConsensus makes it possible to automate project governance on GitHub by using “reactions” as a voting mechanism to automatically merge (or close) pull requests.
-      github: gitconsensus/GitConsensusService
-      dockerhub: tedivm/gitconsensus_service
-      image: gitconsensus.png
-      homepage: https://www.gitconsensus.com/
-
-    - name: BadThings Slack Bot
-      description: "The <a href=\"https://twitter.com/badthingsdaily\">Bad Things Daily Twitter</a> account provides scenarios for tabletop disaster planning. This application sends random scenarios right to Slack."
-      github: tedivm/BadThingsDailyBot
-      homepage: https://badthings.tedivm.com/
-      image: badthings.jpg
-
-    - name: League of Automated Nations
-      description: This web application is an alliance tracker for a programming game called Screeps. It maintains rankings as well as an interactive map showing which rooms are claimed by different players and alliances.
-      github: LeagueOfAutomatedNations/Screeps-LoAN
-      homepage: https://www.leagueofautomatednations.com/
-      image: loan.png
-
-    - name: ec2details
-      description: "This service provides an API with metadata (including pricing) for every AWS EC2 instance type.\nIt processes the AWS Bulk API to multiple times a day to always provide the most up to date information."
-      github: tedivm/ec2details
-      homepage: https://tedivm.github.io/ec2details/
-      icon: fab fa-aws
-
-
-- name: Libraries
-  projects:
-    - name: Stash
-      description: This caching library supports multiple backends with a consistent frontend. It supports hierarchical keys, stampede and dogpile protection, automatic miss distribution, and more.
-      github: tedious/Stash
-      documentation: https://www.stashphp.com/
-      packagist: tedivm/stash
-      icon: fab fa-php
-
-    - name: JShrink
-      description: This library minifies javascript using 100% pure PHP, allowing it to be integrated into applications with minimal work and maximum compatibility.
-      github: tedious/JShrink
-      packagist: tedivm/jshrink
-      icon: fab fa-php
-
-    - name: github3apps.py
-      description: This library is a wrapper around the <a href="https://github.com/sigmavirus24/github3.py">github3.py</a> library, giving it the ability to build GitHub Applications.
-      github: tedivm/github3apps.py
-      pypi: github3apps.py
-      icon: fab fa-github
-
-    - name: Fetch
-      description: This library wraps the native PHP IMAP libraries around a modern object orientated interface.
-      github: tedious/Fetch
-      packagist: tedivm/fetch
-      icon: fab fa-php
-
-
 - name: CLIs
   icon: fas fa-terminal
   projects:
-    - name: GitConsensus CLI
-      description: A standalone python application and library for managing Github PRs using Reactions as a voting mechanism.
-      github: gitconsensus/GitConsensusCLI
-      pypi: gitconsensus
-      image: gitconsensus.png
+    - name: Example
+      description: The logo for this project is for Puppet, and comes from the "assets/images/projects" directory.
+      github: example/example
+      pypi: example
+      image: puppet.png
 
-    - name: JSONSmash
-      description: A node cli shell that lets users browse large json objects like they would a filesystem.
-      github: tedivm/jsonsmash
+    - name: Example
+      description: This project can be installed from npm.
+      github: Example/Example
       npm: jsonsmash
 
-    - name: SecretCLI
-      description: A simple CLI tool that makes reading and writing to the <a href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a> super easy.
-      github: tedivm/secretcli
+    - name: Example
+      description: This project can be installed from pypi.
+      github: Example/Example
       pypi: secretcli
-
-    - name: URLParser
-      description: Another really simple tool, the URLParser takes in various URIs and returns back the piece you're looking for; such as the scheme, domain, or port.
-      github: tedivm/URLParser
-      pypi: urlparser
-
-
-- name: Puppet
-  image: puppet.png
-  projects:
-    - name: psad
-      description: This module controls the Port Scan Active Defense program, providing active response to block port scans.
-      puppet_forge: tedivm/psad
-      github: tedivm/puppet-psad
-
-    - name: rsnapshot
-      description: This advanced rsnapshot module makes backing up servers trivial. SSH keys and accounts are created, as are wrapper scripts around sudo to prevent opening the root account to ssh.
-      puppet_forge: tedivm/rsnapshot
-      github: tedivm/puppet-rsnapshot
-
-    - name: ghebackups
-      description: This module turns a server into a Github Enterprise backup server. It creates the relevant accounts, adds cronjobs, and manages ssh options to ensure that backups occur.
-      puppet_forge: tedivm/ghebackups
-      github: tedivm/puppet-ghebackups
-
-    - name: hieratic
-      description: This module makes all of the native datatypes present in Puppet accessible directly using Hiera in order to make testing and prototyping faster.
-      puppet_forge: tedivm/hieratic
-      github: tedivm/puppet-hieratic
-
-    - name: inspiricd
-      description: This module allows IRC networks and servers to be defined using inspircd.
-      puppet_forge: tedivm/inspircd
-      github: tedivm/puppet-inspircd
-
-    - name: iscsi
-      description: This module makes it possible to define iscsi connections in Puppet. This makes it easier to work with AWS Storage Gateways and other iscsi devices.
-      puppet_forge: tedivm/iscsi
-      github: tedivm/puppet-iscsi
 
 
 - name: Misc
   projects:
-    - name: NLM Scrubber Assist
-      description: The <a href="https://scrubber.nlm.nih.gov/">NLM Scrubber</a> is a package released by the National Library of Medicine to remove PHI from medical documents. This project wraps that in a docker container and provides python and bash libraries.
-      github: radaisystems/nlm-scrubber-docker
-      dockerhub: radaisystems/nlm-scrubber
+    - name: Example
+      description: This project uses Font Awesome icons and is on Dockerhub.
+      github: Example/Example
+      dockerhub: Example/Example
       icon: fas fa-file-medical-alt
 
-    - name: tedivms-flask
-      description: This is my default Flask project template. It contains a complete docker environment, user management system, API system, Celery worker and tasks, and other important modules in addition to a Bootstrap based front end.
-      github: tedivm/tedivms-flask
-      icon: fas fa-flask
-
-    - name: HeadedHome
-      description: Using an IOT Button as a trigger, this Lambda function estimates my time of getting home from work based off of current public transit times and sends a text to both myself and my partner with that ETA.
-      github: tedivm/HeadedHome
-      icon: fab fa-aws
-
-    - name: syntaxhighlighter_yaml
-      description: This Wordpress Plugin adds YAML Syntax Highlighting.
+    - name: Example
+      description: This Wordpress Plugin is actually just an example project.
       platform: Wordpress
-      github: tedivm/syntaxhighlighter_yaml
-      wordpress: syntaxhighlighter-evolved-yaml-brush
+      github: Example/Example
+      wordpress: Example
       icon: fab fa-wordpress
-
-
-- name: Screeps
-  description: <a href="https://screeps.com/" class="alert-link">Screeps</a> is an an open-source sandbox MMO RTS game for programmers, wherein the core mechanic is programming your units' AI.
-  projects:
-    - name: Quorum
-      description: The Quorum project is an experiment that uses Screeps, GitConsensus, and the ScreepsAutoSpawner to see what happens when the community has to vote to accept new pull requests- and any vote that passes gets pulled. It initially started as being written primarily by me and overtime has gotten more community involvement.
-      github: ScreepsQuorum/screeps-quorum
-      npm: screepsbot-quorum
-      image: quorum.png
-
-    - name: ScreepsAutoSpawner
-      description: This program checks the Screeps world to see if the player is still alive, and if not it automatically respawns them into the world. This requires scanning the world to find appropriate locations, scoring them, and then placing the first spawn automatically in the selected room.
-      github: tedivm/ScreepsAutoSpawner
-      image: quorum.png
-
-    - name: ScreepsDashboard
-      description: This dashboard was created for the Quorum project and lets the public view all of the otherwise hidden Screeps player information. This application exposed wallet, memory, segment, and console data (which gets stored in ElasticSearch to allow querying of historic data).
-      github: tedivm/ScreepsDashboard
-      image: quorum.png
-
-    - name: python-screeps
-      description: This library was the first third party library for the Screeps API and has been responsible for spawning a large third party ecosystem.
-      github: screepers/python-screeps
-      pypi: screepsapi
-      icon: fab fa-python
-
-    - name: screeps_console
-      description: This ncurses based terminal application provides a standalone console for the Screeps world.
-      github: screepers/screeps_console
-      icon: fas fa-terminal
-
-    - name: screeps_notify
-      description: This bridges the Screeps world with the real world by allowing users to send notifications programmatically from in game to a number of providers, including Text Messages and Slack Notifications.
-      github: screepers/screeps_notify
-      image: screepers.gif
-
-    - name: screeps-stats
-      description: Using a reverse engineered API this project takes data saved inside the game “Screeps”, transforms it and injects it into elasticsearch.
-      github: screepers/screeps-stats
-      image: screepers.gif
-
-    - name: Spawn1
-      description: This is a mobile client for the Screeps game built using NativeScript. It has a built in messenger, profiles of different alliances, a websocket based console for interacting with the system, and other informational pages such as the wallet and market order pages.
-      github: tedivm/Spawn1
-      image: nativescript.png
-
-    - name: screepsmod-konami
-      description: Konami is a Screeps Server mod that changes the world settings to allow AI to grow significantly faster. This makes development easier as longer term issues will show up in smaller amounts of time.
-      github: screepsmods/screepsmod-konami
-      npm: screepsmod-konami
-      image: screepsmods.png
-
-    - name: screeps-backup
-      description: This tool takes a backup of an existing account's memory and segments and provides the ability to restore from those backups.
-      github: screepers/screeps-backup
-      image: screepers.gif
