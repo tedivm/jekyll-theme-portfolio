@@ -9,8 +9,10 @@ It is possible to use this theme without understanding anything about building w
 It is also possible to go beyond that and customize the project right down to the CSS. This theme is made with [Bootstrap 4](https://getbootstrap.com/) and [SCSS](https://sass-lang.com/documentation/syntax).
 
 
-## Getting Started
+![alt text](https://raw.githubusercontent.com/tedivm/jekyll-theme-portfolio/master/screenshot.png)
 
+
+## Getting Started
 
 ### Setup a Github Pages Site
 
