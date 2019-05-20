@@ -65,6 +65,7 @@ layout: portfolio
 
 This tells Jekyll to use the `portfolio` layout for the page, which lets the theme take care of the rest.
 
+If you do leave any content in the file it will show up above the portfolio listings.
 
 ### Add your Projects
 
@@ -160,6 +161,14 @@ Once there the first thing you'll likely want to change is the `$primary` color,
 
 ### Adding a FavIcon
 
+There are all sorts of websites and tools which will help you make your favicon file. Once you have you just need to dump it into the repository as `favicon.ico` and it will start showing up.
+
+
+### Using a Custom Domain
+
+Github supports [custom domains](https://help.github.com/en/articles/using-a-custom-domain-with-github-pages), as you can see from their extensive documention.
+
+Long story short, point the DNS for your domain to `username.github.io` as a CNAME record and then add a file named `CNAME` with that domain as the file contents.
 
 
 ## Awknowledgements
