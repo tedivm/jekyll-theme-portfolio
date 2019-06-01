@@ -171,6 +171,24 @@ Github supports [custom domains](https://help.github.com/en/articles/using-a-cus
 Long story short, point the DNS for your domain to `username.github.io` as a CNAME record and then add a file named `CNAME` with that domain as the file contents.
 
 
+### Adding Analytics
+
+This theme supports two website analytics options- [Fathom](https://usefathom.com/), which is an [open source](https://github.com/usefathom/fathom) and privacy focused analytics package, or theres [Google Analytics](https://google.com/analytics). Both require a simple addition to your configuration file to use.
+
+Fathom takes a Site ID and optionally a URL (if you're hosting it yourself instead of using their service).
+
+```
+fathom_key: DXQMN
+fathom_domain: fathom.example.net
+```
+
+For Google Analytics you only need the one option.
+
+```
+google_analytics: UA-XXXXX-Y
+```
+
+
 ## Awknowledgements
 
 This project was forked off of the excellent [Boostrap 4 Github Pages project](https://github.com/nicolas-van/bootstrap-4-github-pages).
