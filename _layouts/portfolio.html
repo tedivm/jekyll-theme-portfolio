@@ -1,5 +1,6 @@
 ---
 layout: page
+columns: 3
 ---
 {{ content }}
 {% for category in site.data.projects %}
@@ -9,13 +10,13 @@ layout: page
     {% if category.description %}
     <div class="alert alert-light">{{ category.description | safe | newline_to_br }}</div>
     {% endif %}
-    {%- assign columns = 3 -%}
+    {%- assign layout.columns = 3 -%}
     {% for project in category.projects %}
-      {% assign loop = forloop.index | minus: 1 | modulo: columns %}
+      {% assign loop = forloop.index | minus: 1 | modulo: layout.columns %}
       {% if loop == 0 %}
       <div class="row">
       {% endif %}
-        <div class="col-12 col-sm-6 col-xl-{{ 12 | divided_by: columns | int }} my-3">
+        <div class="col-12 col-sm-6 col-xl-{{ 12 | divided_by: layout.columns | int }} my-3">
           <div class="card">
             <div class="text-center">
             {% if project.image %}
@@ -56,7 +57,7 @@ layout: page
             </ul>
           </div>
         </div>
-      {%- assign last_loop = columns | minus: 1 -%}
+      {%- assign last_loop = layout.columns | minus: 1 -%}
       {% if loop == last_loop or forloop.last == true %}
       </div>
       {%- endif -%}

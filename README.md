@@ -65,7 +65,23 @@ layout: portfolio
 
 This tells Jekyll to use the `portfolio` layout for the page, which lets the theme take care of the rest.
 
-If you do leave any content in the file it will show up above the portfolio listings.
+If you prefer two columns instead of three you can use the two column layout instead-
+
+```
+---
+layout: portfolio_2column
+---
+```
+
+If you leave any content in the file it will show up above the portfolio listings.
+
+```
+---
+layout: portfolio
+---
+<h2> Welcome!</h2>
+```
+
 
 ### Add your Projects
 
