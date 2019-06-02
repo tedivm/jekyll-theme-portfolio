@@ -41,7 +41,7 @@ description: >
 # Header Links - all optional. If set these create header links.
 homepage: https://your.homepage.com
 twitter_username: example
-github_username:  example
+github_username: example
 linkedin_username: example
 
 
@@ -164,6 +164,10 @@ Icons come from [FontAwesome](https://fontawesome.com/icons?d=gallery&m=free). T
 Images should be supplied by you. Any images should be added to `assets/images/projects`, afterwhich they can be used in any `image` by using the filename (such as `image: puppet.png`).
 
 You can also use `icon` and `image` at the category level. This will set the default for that category.
+
+### Github Stars
+
+The Github Star badges are using the [GithubStars API](https://blog.tedivm.com/open-source/2019/05/gitstars-a-github-api-for-front-end-development/). This bypasses various Github API ratelimiting issues that plague many Github Badge projects.
 
 
 ## Customizing
