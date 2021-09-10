@@ -9,4 +9,7 @@
   <script defer src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
   <script defer src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
   <script src="https://gitbuttons.tedivm.com/buttons.js" integrity="sha384-dl0n4CP/gJsA31+mtSe2Gc0FbNR6oq2Ox4HHwEq6LTiZEPRMTzj87lXYl2l/w+KQ" crossorigin="anonymous"></script>
+  {% if site.plausible_domain %}
+    <script defer data-domain="{% if site.plausible_domain %}" src="https://plausible.io/js/plausible.js"></script>
+  {%- endif -%} 
 </head>
