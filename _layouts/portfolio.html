@@ -47,6 +47,10 @@ columns: 3
                 {% if project.documentation %}<a href="{{ project.documentation }}" class="card-link"><i class="fas fa-book-open fa-2x" title="{{ project.name }} Documentation"></i></a>{% endif %}
                 {% if project.github %}<a href="https://github.com/{{ project.github }}" class="card-link"><i class="fab fa-github fa-2x" title="{{ project.name }} on Github"></i></a>{% endif %}
                 {% if project.dockerhub %}<a href="https://hub.docker.com/r/{{ project.dockerhub }}" class="card-link"><i class="fab fa-docker fa-2x" title="{{ project.name }} on Docker Hub"></i></a>{% endif %}
+                {% if project.ghcr %}
+                  {% assign ghcr_project = project.ghcr | split: '/' %}
+                  <a href="https://github.com/{{ project.ghcr }}/pkgs/container/{{ ghcr_project }}" class="card-link"><i class="fab fa-docker fa-2x" title="{{ ghcr_project }} on Github Container Registry"></i></a>
+                {% endif %}
                 {% if project.puppet_forge %}<a href="https://forge.puppet.com/{{ project.puppet_forge }}" class="card-link"><i class="fas fa-flask fa-2x" title="{{ project.name }} on Puppet Forge"></i></a>{% endif %}
                 {% if project.npm %}<a href="https://www.npmjs.com/package/{{ project.npm }}" class="card-link"><i class="fab fa-npm fa-2x" title="{{ project.name }} on the NPM Registry"></i></a>{% endif %}
                 {% if project.pypi %}<a href="https://pypi.org/project/{{ project.pypi }}/" class="card-link"><i class="fab fa-python fa-2x" title="{{ project.name }} on PyPI"></i></a>{% endif %}
