@@ -48,7 +48,7 @@ columns: 3
                 {% if project.github %}<a href="https://github.com/{{ project.github }}" class="card-link"><i class="fab fa-github fa-2x" title="{{ project.name }} on Github"></i></a>{% endif %}
                 {% if project.dockerhub %}<a href="https://hub.docker.com/r/{{ project.dockerhub }}" class="card-link"><i class="fab fa-docker fa-2x" title="{{ project.name }} on Docker Hub"></i></a>{% endif %}
                 {% if project.ghcr %}
-                  {% assign ghcr_project = project.ghcr | split: '/' %}
+                  {% assign ghcr_project = project.ghcr | split: '/' | last %}
                   <a href="https://github.com/{{ project.ghcr }}/pkgs/container/{{ ghcr_project }}" class="card-link"><i class="fab fa-docker fa-2x" title="{{ ghcr_project }} on Github Container Registry"></i></a>
                 {% endif %}
                 {% if project.puppet_forge %}<a href="https://forge.puppet.com/{{ project.puppet_forge }}" class="card-link"><i class="fas fa-flask fa-2x" title="{{ project.name }} on Puppet Forge"></i></a>{% endif %}
